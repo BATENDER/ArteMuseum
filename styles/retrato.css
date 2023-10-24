@@ -1,0 +1,44 @@
+/* * {
+    transition: .8s;
+} */
+
+#opcoesMobile {
+    display: none;
+}
+
+#opcoesPc {
+    display: none;
+}
+
+#menuMobile {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#menuMobile:hover {
+    cursor: pointer;
+}
+
+main {
+    width: 100%;
+    padding: 5px;
+}
+
+#cartao {
+    width: 100%;
+}
+
+.divisao {
+    width: 80%;
+}
+
+#artes {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    width: 100%;
+}

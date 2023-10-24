@@ -6,6 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles/index.css">
+        <link rel="stylesheet" href="styles/retrato.css" media="screen and (max-width:768px)">
         <link rel="shortcut icon" href="imgs/logo-museu.svg" type="image/x-icon">
         <title>ArteMuseum - Destaques</title>
     </head>
@@ -23,7 +24,19 @@
                             <li> <a href="#">Contato</a> </li>
                         </ul>
                     </nav>
+
+                    <div id="menuMobile" onclick="abrirOpcoes()">
+                        <img src="imgs/expand_more_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                    </div>
             </header>
+
+            <nav id="opcoesMobile">
+                <ul>
+                    <li> <a href="#">Home</a> </li>
+                    <li> <a href="#">Galeria</a> </li>
+                    <li> <a href="#">Contato</a> </li>
+                </ul>
+            </nav>
 
             <main>
                 <h3 class="subtitulo">Destaque da semana</h3>
@@ -31,7 +44,10 @@
 
                 <div id="cartao">
                     <h3>Elizabeth</h3>
-                    <img src="imgs/elizabeth.jpg" alt="formato padrão da imagem de um artista">
+                    <picture>
+                        <source srcset="imgs/elizabethMenor.png" media="screen and (max-width:768px)">
+                        <img src="imgs/elizabeth.jpg" alt="formato padrão da imagem de um artista">
+                    </picture>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis atque tempore eligendi facilis nisi est, exercitationem voluptatem omnis quae placeat dolores mollitia officia eveniet ipsa. Voluptate eum quos vel illum?</p>
                     <button class="btnInfo">Ver sobre</button>
                 </div>
@@ -71,5 +87,16 @@
                 <h5>ArtMuseum © 2023</h5>
             </footer>
         </div>
+
+        <script>
+            function abrirOpcoes() {
+                if (opcoesMobile.style.display == 'none') {
+                    opcoesMobile.style.display = 'flex'
+                } else {
+                    opcoesMobile.style.display = 'none'
+                }
+            }
+        </script>
+
     </body>
 </html>
