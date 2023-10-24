@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#pagina {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+}
+
+header, footer {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: beige;
+    background-color: #2A2B2A;
+}
+
+#opcoesPc ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+#opcoesPc a {
+    text-decoration: none;
+    color: beige;
+}
+
+#opcoesPc a:hover {
+    text-decoration: overline;
+    text-decoration-color: beige;
+}
+
+main {
+    width: 80%;
+    margin: 20px 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subtitulo {
+    font-weight: 900;
+    font-size: 16pt;
+}
+
+.divisao {
+    width: 40%;
+    margin-top: 10px;
+    border-radius: 20px;
+    border: 2px solid #F5124B;
+}
+
+#cartao {
+    width: 90%;
+    margin: 60px 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #2A2B2A;
+    border-radius: 20px;
+}
+
+#cartao h3 {
+    font-weight: bold;
+    font-size: 18pt;
+    margin-bottom: 10px;
+}
+
+#cartao img {
+    width: 98%;
+    margin: 20px 0;
+}
+
+#cartao p {
+    margin: 0 0 20px 0;
+    text-align: center;
+    color: #666666;
+}
+
+.btnInfo {
+    width: 110px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    font-size: 13pt;
+    font-weight: bold;
+    color: beige;
+    background-color: #F5124B;
+}
+
+main p {
+    width: 90%;
+    font-size: 12pt;
+    font-weight: bold;
+    text-align: center;
+}
+
+#galeriaArtes {
+    width: 100%;
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#artes {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    width: 25%;
+    padding: 20px;
+    margin: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 10px;
+    border: 1px solid #2A2B2A;
+}
+
+section img {
+    width: 100%;
+}
+
+.descricaoArte {
+    color: #666666;
+}
