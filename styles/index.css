@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: .8s;
 }
 
 #pagina {
@@ -68,8 +69,8 @@ header, footer {
     border-radius: 20px;
 }
 
-#opcoesMobilie ul li:hover {
-    background-color: aliceblue;
+#opcoesMobile ul li:hover {
+    background-color: grey;
     cursor: pointer;
 }
 
@@ -137,6 +138,12 @@ main {
     font-weight: bold;
     color: beige;
     background-color: #F5124B;
+}
+
+.btnInfo:hover {
+    cursor: pointer;
+    width: 180px;
+    background-color: #ff4977;
 }
 
 main p {
