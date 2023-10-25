@@ -25,7 +25,11 @@ main {
     padding: 10px;
 }
 
-#cartao {
+#info {
+    width: 90%;
+}
+
+#destaque {
     width: 100%;
 }
 

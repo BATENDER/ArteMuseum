@@ -7,8 +7,12 @@ main {
     padding: 10px;
 }
 
-#cartao {
+#destaque {
     width: 100%;
+}
+
+#info {
+    width: 90%;
 }
 
 .divisao {
