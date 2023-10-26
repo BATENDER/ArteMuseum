@@ -31,6 +31,7 @@ header, footer {
 }
 
 #logo {
+    cursor: default;
     font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
     font-size: 15pt;
 }
@@ -58,43 +59,7 @@ header, footer {
     display: none;
 }
 
-/* Fim Cabeçalho */
-
-
-#opcoesMobile {
-    width: 100%;
-    padding: 10px;
-    display: none;
-    flex-direction: column;
-    text-align: center;
-    background-color: #2A2B2A;
-}
-
-#opcoesMobile ul {
-    flex-direction: column;
-}
-
-#opcoesMobile ul li{
-    width: 100%;
-    height: 30px;
-    margin: 10px 0;
-    list-style: none;
-    transition: 1s;
-    border-radius: 20px;
-}
-
-#opcoesMobile ul li:hover {
-    background-color: grey;
-    cursor: pointer;
-}
-
-#opcoesMobile a {
-    line-height: 30px;
-    text-decoration: none;
-    color: beige;
-}
-
-/* Fim Mobile */
+/* Fim Cabeçalho */ 
 
 
 /* Conteúdo */
@@ -144,7 +109,7 @@ main {
     margin-bottom: 10px;
 }
 
-img {
+img, picture {
     width: 100%;
 }
 
@@ -154,11 +119,13 @@ img {
 }
 
 .btnInfo {
-    width: 110px;
+    width: 120px;
     height: 40px;
     padding: 10px;
     border-radius: 5px;
     border: none;
+    overflow: hidden;
+    text-align: center;
     font-size: 13pt;
     font-weight: bold;
     color: beige;
@@ -167,7 +134,7 @@ img {
 
 .btnInfo:hover {
     cursor: pointer;
-    width: 180px;
+    width: 150px;
     background-color: #ff4977;
 }
 
@@ -189,7 +156,7 @@ img {
 }
 
 #artes {
-    width: 80%;
+    width: 100%;
     margin-top: 20px;
     display: flex;
     justify-content: center;
@@ -198,7 +165,7 @@ img {
 }
 
 section {
-    width: 30%;
+    width: 32%;
     padding: 20px;
     margin-top: 20px;
     margin-right: 20px;
@@ -213,6 +180,10 @@ section {
 
 .descricaoArte {
     color: #666666;
+}
+
+#comprimir {
+    display: none;
 }
 
 /* Fim Conteúdo */

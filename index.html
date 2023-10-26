@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles/index.css">
-        <link rel="stylesheet" href="styles/retrato.css" media="screen and (max-width:1010px)">
+        <link rel="stylesheet" href="styles/retrato.css" media="screen and (max-width:768px)">
         <link rel="stylesheet" href="styles/paisagem.css" media="screen and (max-height:500px)">
         <link rel="shortcut icon" href="imgs/logo-museu.svg" type="image/x-icon">
         <title>ArtMuseum - Destaques</title>
@@ -28,7 +28,8 @@
                     </nav>
 
                     <div id="menuMobile" onclick="abrirOpcoes()">
-                        <img src="imgs/expand_more_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                        <img src="imgs/expand_more_FILL0_wght400_GRAD0_opsz24.svg" alt="" id="expandir">
+                        <img src="imgs/expand_less_FILL0_wght400_GRAD0_opsz24.svg" alt="" id="comprimir">
                     </div>
             </header>
 
@@ -48,7 +49,7 @@
                 <div id="destaque">
                     <h3>Elizabeth</h3>
                     <picture>
-                        <source srcset="imgs/elizabethMenor.png" media="screen and (max-width:1010px)">
+                        <source srcset="imgs/elizabethMenor.png" media="screen and (max-width:768px)">
                         <source srcset="imgs/elizabethLandscape.png" media="screen and (max-height:500px)">
                         <img src="imgs/elizabeth.jpg" alt="formato padrão da imagem de um artista">
                     </picture>
@@ -103,8 +104,12 @@
             function abrirOpcoes() {
                 if (opcoesMobile.style.display == 'none') {
                     opcoesMobile.style.display = 'flex'
+                    comprimir.style.display = 'flex'
+                    expandir.style.display = 'none'  
                 } else {
                     opcoesMobile.style.display = 'none'
+                    comprimir.style.display = 'none'
+                    expandir.style.display = 'flex'
                 }
             }
         </script>

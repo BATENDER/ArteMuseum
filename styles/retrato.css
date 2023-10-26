@@ -1,22 +1,55 @@
 * {
     transition: .8s;
-} 
-
-#opcoesMobile {
-    display: none;
 }
 
 #opcoesPc {
     display: none;
 }
 
+#opcoesMobile {
+    width: 100%;
+    padding: 10px;
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    background-color: #2A2B2A;
+}
+
+#opcoesMobile ul {
+    flex-direction: column;
+}
+
+#opcoesMobile ul li{
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    list-style: none;
+    transition: 1s;
+    border-radius: 20px;
+}
+
+#opcoesMobile ul li:hover {
+    background-color: grey;
+    cursor: pointer;
+}
+
+#opcoesMobile a {
+    line-height: 30px;
+    text-decoration: none;
+    color: beige;
+}
+
 #menuMobile {
-    height: 100%;
     display: flex;
     align-items: center;
 }
 
-#menuMobile:hover {
+#menuMobile img {
+    border-radius: 10px;
+}
+
+#menuMobile img:hover {
+    box-shadow: 0 0 4px white;
     cursor: pointer;
 }
 
@@ -41,6 +74,7 @@ main {
     width: 100%;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 section {
